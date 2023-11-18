@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-17T22:58:37 EST" name="Default suite" finished-at="2023-11-17T22:58:51 EST" duration-ms="13586">
+  <suite started-at="2023-11-18T12:56:37 EST" name="Default suite" finished-at="2023-11-18T12:56:47 EST" duration-ms="10000">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@3c41ed1d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-11-17T22:58:37 EST" name="Default test" finished-at="2023-11-17T22:58:51 EST" duration-ms="13586">
+    <test started-at="2023-11-18T12:56:37 EST" name="Default test" finished-at="2023-11-18T12:56:47 EST" duration-ms="10000">
       <class name="runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@3c41ed1d]" started-at="2023-11-17T22:58:37 EST" name="setUpClass" finished-at="2023-11-17T22:58:39 EST" duration-ms="2032" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@3c41ed1d]" started-at="2023-11-18T12:56:37 EST" name="setUpClass" finished-at="2023-11-18T12:56:38 EST" duration-ms="1076" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@66716959]]>
+                <![CDATA[org.testng.TestRunner@1cee3e05]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@3c41ed1d]" started-at="2023-11-17T22:58:39 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-17T22:58:50 EST" duration-ms="10604" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@3c41ed1d]" started-at="2023-11-18T12:56:38 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-18T12:56:45 EST" duration-ms="6906" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@3c41ed1d]" started-at="2023-11-17T22:58:50 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-17T22:58:51 EST" duration-ms="595" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@3c41ed1d]" started-at="2023-11-18T12:56:45 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-18T12:56:45 EST" duration-ms="179" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -50,15 +50,88 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Cannot serialize because cannot determine how to serialize content-type multipart/form-data]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Cannot serialize because cannot determine how to serialize content-type multipart/form-data
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.mapping.ObjectMapping.serialize(ObjectMapping.groovy:180)
+at io.restassured.internal.mapping.ObjectMapping$serialize.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.internal.mapping.ObjectMapping$serialize.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:770)
+at api.stepdefinitions.Patient_step.dietician_sends_request_body_with_details_with_and_from_excel(Patient_step.java:103)
+at ✽.Dietician sends request Body with details with "postPatient1" and "createPatient" from excel.(file:///C:/Users/anoop/eclipse-workspaceNew/API-Crafters/src/test/resources/features/03Patient.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@3c41ed1d]" started-at="2023-11-18T12:56:45 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-18T12:56:46 EST" duration-ms="287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if dietician able to retrieve all the Patients."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create Patient"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@3c41ed1d]" started-at="2023-11-18T12:56:46 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-18T12:56:46 EST" duration-ms="252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if dietician able to retrieve a Patient by ID."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create Patient"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@3c41ed1d]" started-at="2023-11-18T12:56:46 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-18T12:56:47 EST" duration-ms="1048" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if dietician able to retrieve a Patient detail by FielID."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create Patient"]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
-Expected status code <200> but was <400>.
+Expected content-type "JSON" doesn't match actual content-type "application/pdf".
 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <400>.
+Expected content-type "JSON" doesn't match actual content-type "application/pdf".
 
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -78,19 +151,17 @@ at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(Plain
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at api.stepdefinitions.Patient_step.dietician_receives_patient_created_status_with_response_body(Patient_step.java:85)
-at ✽.Dietician receives Patient Created Status with response body.(file:///C:/Users/anoop/eclipse-workspaceNew/API-Crafters/src/test/resources/features/03Patient.feature:15)
+at io.restassured.internal.ResponseSpecificationImpl.contentType(ResponseSpecificationImpl.groovy:435)
+at io.restassured.internal.ValidatableResponseOptionsImpl.contentType(ValidatableResponseOptionsImpl.java:220)
+at api.stepdefinitions.Patient_step.dietician_receives_ok_status_with_patients_data(Patient_step.java:142)
+at ✽.Dietician receives 200 OK Status with Patients data(file:///C:/Users/anoop/eclipse-workspaceNew/API-Crafters/src/test/resources/features/03Patient.feature:38)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@3c41ed1d]" started-at="2023-11-17T22:58:51 EST" name="tearDownClass" finished-at="2023-11-17T22:58:51 EST" duration-ms="223" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@3c41ed1d]" started-at="2023-11-18T12:56:47 EST" name="tearDownClass" finished-at="2023-11-18T12:56:47 EST" duration-ms="133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
