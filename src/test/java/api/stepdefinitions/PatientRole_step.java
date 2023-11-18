@@ -1,5 +1,5 @@
 package api.stepdefinitions;
 
-public class Hooks {
+public class PatientRole_step {
 
 }

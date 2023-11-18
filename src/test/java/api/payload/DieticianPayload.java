@@ -1,6 +1,6 @@
 package api.payload;
 
-public class  UserPayload {
+public class  DieticianPayload {
 	
 	String password;
 	String userLoginEmail;
