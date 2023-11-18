@@ -5,9 +5,9 @@ import java.util.Map;
 import org.hamcrest.Matchers;
 import org.json.simple.JSONObject;
 
-import api.RequestBody.UserRequestBody;
+import api.RequestBody.DieticianRequestBody;
 import api.endpoints.Routes;
-import api.payload.UserPayload;
+import api.payload.DieticianPayload;
 import api.utilities.ExcelReader;
 import api.utilities.*;
 import io.cucumber.java.en.Given;
@@ -25,8 +25,8 @@ public class DieticianUserLogin_step {
 	RequestSpecification request;
 	Response response;
 	ValidatableResponse valid_resp;
-	public static UserRequestBody userRequestbody;
-	public static UserPayload userpayload;
+	public static DieticianRequestBody userRequestbody;
+	public static DieticianPayload userpayload;
 	public static String Dietician_token;
 	
 	@Given("User creates POST Request for login as Dietician.")

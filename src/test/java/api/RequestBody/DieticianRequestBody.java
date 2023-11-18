@@ -3,14 +3,14 @@ package api.RequestBody;
 import java.util.Map;
 
 import api.payload.PatientPayload;
-import api.payload.UserPayload;
+import api.payload.DieticianPayload;
 import api.utilities.ExcelReader;
 
-public class UserRequestBody {
+public class DieticianRequestBody {
 	
-	public static UserPayload  userpayload = new UserPayload();
+	public static DieticianPayload  userpayload = new DieticianPayload();
 	
-	public static UserPayload PostUserBody(String KeyOption, String sheetname) throws Exception {
+	public static DieticianPayload PostUserBody(String KeyOption, String sheetname) throws Exception {
 		
 		Map<String, String> excelDataMap ;
 	    excelDataMap = ExcelReader.getData(KeyOption, sheetname);	
