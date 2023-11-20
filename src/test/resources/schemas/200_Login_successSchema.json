@@ -1,0 +1,32 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "token": {
+            "type": "string"
+            },
+            "type": {
+                    "type": "string"
+                },
+                "userId": {
+                    "type": "integer"
+                },
+                "loginUserEmail": {
+                    "type": "string"
+                },
+                "roles": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "loginUserEmail",
+                "roles",
+                "token",
+                "type",
+                "userId"
+            ]
+
+}

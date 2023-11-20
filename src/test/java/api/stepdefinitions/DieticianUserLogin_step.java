@@ -1,23 +1,19 @@
 package api.stepdefinitions;
 
-import java.util.Map;
 
 import org.hamcrest.Matchers;
-import org.json.simple.JSONObject;
-
-import api.RequestBody.DieticianRequestBody;
+import api.RequestBody.UserRequestBody;
 import api.endpoints.Routes;
-import api.payload.DieticianPayload;
-import api.utilities.ExcelReader;
-import api.utilities.*;
+import api.payload.UserPayload;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import api.utilities.LoggerLoad;
 
 
 public class DieticianUserLogin_step {
@@ -25,9 +21,10 @@ public class DieticianUserLogin_step {
 	RequestSpecification request;
 	Response response;
 	ValidatableResponse valid_resp;
-	public static DieticianRequestBody userRequestbody;
-	public static DieticianPayload userpayload;
+	public static UserPayload userpayload;
 	public static String Dietician_token;
+	
+	
 	
 	@Given("User creates POST Request for login as Dietician.")
 	public void user_creates_post_request_with_fields_and_from_excel() {
@@ -36,6 +33,7 @@ public class DieticianUserLogin_step {
 	        this.request = RestAssured
 	        		.given().log().all()
 	        		.header("Content-Type", "application/json");
+	       LoggerLoad.logInfo("Request for Dietician Login Header Validated");
 		  		
 	}
 
@@ -43,30 +41,37 @@ public class DieticianUserLogin_step {
 	public void user_sends_request_body_with_mandatory_additional_fields(String KeyOption, String sheetname) throws Exception {
 	   
 		
-			userpayload = userRequestbody.PostUserBody(KeyOption,sheetname);
-		
-	    	  System.out.println("------"+Routes.login_Url);
-	    	  response = request.body(userpayload).post(Routes.login_Url);
+			userpayload = UserRequestBody.PostUserBody(KeyOption,sheetname);
+	    	 response = request.body(userpayload).post(Routes.login_Url);
+	    	 
+	    	LoggerLoad.logInfo("Dietician Login RequestBody passed");
 	      
 	      }	
 
-	@Then("User as dietician receives Status with response body.")
-	public void user_receives_status_with_response_body_and_from_excel() {
+	@Then("User as dietician receives Status for corresponding {string} with response body.")
+	public void user_receives_status_with_response_body(String KeyOption) {
 	    
-		 valid_resp = response.then().log().all()
-				 		.assertThat().statusCode(200)
-				 		.body("token", Matchers.notNullValue());
-		// Dietician_token = response.body().asString();
-		 Dietician_token = response.body().path("token");
-		 System.out.println("Token ----->>>"+Dietician_token);
-				 		
+			if(KeyOption.equalsIgnoreCase("DieticianLogin_InValid")) {
+		
+				valid_resp = response.then().log().all()
+						 		.assertThat().statusCode(401)
+						 		.body("token", Matchers.nullValue());
+						 		
+				 LoggerLoad.logInfo("Dietician Login for Invalid Request Validated");
+				 
+			}else if(KeyOption.equalsIgnoreCase("DieticianLogin_Valid")) {
+			
+				valid_resp = response.then().log().all()
+					 		.assertThat().statusCode(200)
+					 		.body("token", Matchers.notNullValue());
+					
+				Dietician_token = response.body().path("token");
+				
+				LoggerLoad.logInfo("Dietician Login for Valid Request Validated");
+							
+			}
 	}
-
-/*	public  String getToken() {
-		Dietician_token = response.body().path("token");
-		 System.out.println("Token ----->>>"+Dietician_token);
-		 return Dietician_token;
-	} */
+		
 	
 	
 	
