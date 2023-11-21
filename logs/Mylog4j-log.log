@@ -4,3 +4,12 @@ io.restassured.internal.ValidatableResponseImpl@47eff554
 io.restassured.internal.ValidatableResponseImpl@204a02a4
 [INFO ] 2023-11-20 15:17:28.916 [main] LoggerLoad - ******** Patient Login - Invalid email  ******** 
 io.restassured.internal.ValidatableResponseImpl@204a02a4
+[INFO ] 2023-11-20 19:07:19.466 [main] LoggerLoad - ******** Patient Login - Invalid email  ******** 
+io.restassured.internal.ValidatableResponseImpl@204a02a4
+[INFO ] 2023-11-20 19:16:56.907 [main] LoggerLoad - ******** Patient Login ********
+
+[INFO ] 2023-11-20 19:16:56.910 [main] LoggerLoad - Patient logged in successfully. Token :eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJDaWVycmFfUGFjb2NoYUBob3RtYWlsLmNvbSIsImlhdCI6MTcwMDUzNjYxNSwiZXhwIjoxNzAwNTY1NDE1fQ.iNtGzKuzalH8XvlEDJWqfSaKcoD9BUCzgYY2tl2peyGIJCawsVKlXCUmXSR8Yzc8_SuBz9oor_5LMHjXzx-BHw
+[INFO ] 2023-11-20 19:16:58.761 [main] LoggerLoad - ******** Patient Login - Invalid email  ******** 
+io.restassured.internal.ValidatableResponseImpl@2b06f498
+[INFO ] 2023-11-20 19:16:59.295 [main] LoggerLoad - ******** Patient Login - Get Report- By PatientID  ******** 
+io.restassured.internal.ValidatableResponseImpl@761b9314

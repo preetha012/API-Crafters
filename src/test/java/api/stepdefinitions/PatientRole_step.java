@@ -63,7 +63,9 @@ public class PatientRole_step {
 				.header("Content-Type", ("application/json")).and()
 				.body(JsonSchemaValidator.matchesJsonSchema(new File(ConfigReader.getLoginJsonSchemaPath()))).and()
 				.body("token", Matchers.notNullValue())
-				.body("userLoginEmail", Matchers.notNullValue());
+				.body("loginUserEmail", Matchers.notNullValue());
+		
+		
 
 		PatientRole_Patient_token = response.body().path("token");
 		//String Patient_userId = response.body().path("userId");
