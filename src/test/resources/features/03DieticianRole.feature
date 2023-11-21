@@ -13,6 +13,9 @@ Feature: Dietician Role Module
       | postPatient_MissingEmail   | createPatient |
       | postPatient_MissingContact | createPatient |
       | postPatient_MissingDOB     | createPatient |
+      | postPatient_Invalid_FoodCat	| createPatient	|
+      | postPatient_Invalid_Allergy	| createPatient	|
+      | postPatient_duplicate_UniqueValue| createPatient |
       | postPatient_Valid          | createPatient |
 
   @02GetALLPatients-asDietician
