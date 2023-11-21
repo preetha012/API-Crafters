@@ -2,7 +2,7 @@
 Feature: Dietician Role Module
 
   @01CreatePatient
-  Scenario Outline: Check if dietician able to craete a patient.
+  Scenario Outline: Dietician creating Patients.
     Given Dietician creates POST Request to create a Patient
     When Dietician sends request Body with details with "<KeyOption>" and "<Sheetname>" from excel.
     Then Dietician receives for "<KeyOption>" Patient Created Status with response body.
@@ -32,7 +32,7 @@ Feature: Dietician Role Module
       | updatePatient_Valid | createPatient |
       | updatePatient_InValid | createPatient |
 
-  @03GetByIDPatient-asDietician
+  @04GetByIDPatient-asDietician
   Scenario Outline: Check if dietician able to retrieve a Patient by ID.
     Given Dietician creates GET  Request with PatientId to retrieve the Patient details.
     When Dietician sends HTTPS request with "<KeyOption>" to get patient details in  Patient Module
@@ -43,7 +43,7 @@ Feature: Dietician Role Module
       | PatientID_Valid   |
       | PatientID_InValid |
 
-  @04GetByFileIDPatient-asDietician
+  @05GetByFileIDPatient-asDietician
   Scenario Outline: Check if dietician able to retrieve a Patient detail by FielID.
     Given Dietician creates GET  Request with FileID to retrieve the Patient details.
     When Dietician sends HTTPS request with "<KeyOption>" as FileID for patient.
