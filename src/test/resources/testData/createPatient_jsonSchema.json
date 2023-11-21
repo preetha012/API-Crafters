@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$ref": "#/definitions/Welcome10",
+    "$ref": "#/definitions/Welcome9",
     "definitions": {
-        "Welcome10": {
+        "Welcome9": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -16,8 +16,7 @@
                     "type": "string"
                 },
                 "ContactNumber": {
-                    "type": "string",
-                    "format": "integer"
+                    "type": "string"
                 },
                 "Email": {
                     "type": "string"
@@ -55,22 +54,22 @@
                 "LastName",
                 "patientId"
             ],
-            "title": "Welcome10"
+            "title": "Welcome9"
         },
         "FileMorbidity": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "655c06bdfa57dd184cbea0be": {
-                    "$ref": "#/definitions/655C06Bdfa57Dd184Cbea0Be"
+                "65584ac2ec1809245b7d45b4": {
+                    "$ref": "#/definitions/65584Ac2Ec1809245B7D45B4"
                 }
             },
             "required": [
-                "655c06bdfa57dd184cbea0be"
+                "65584ac2ec1809245b7d45b4"
             ],
             "title": "FileMorbidity"
         },
-        "655C06Bdfa57Dd184Cbea0Be": {
+        "65584Ac2Ec1809245B7D45B4": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -89,18 +88,18 @@
                 "T4",
                 "TSH"
             ],
-            "title": "655C06Bdfa57Dd184Cbea0Be"
+            "title": "65584Ac2Ec1809245B7D45B4"
         },
         "FileMorbidityCondition": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "655c06bdfa57dd184cbea0be": {
+                "65584ac2ec1809245b7d45b4": {
                     "type": "string"
                 }
             },
             "required": [
-                "655c06bdfa57dd184cbea0be"
+                "65584ac2ec1809245b7d45b4"
             ],
             "title": "FileMorbidityCondition"
         }
