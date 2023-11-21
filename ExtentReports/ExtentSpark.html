@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Extent Spark Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 21, 2023 00:24:50</span></a>
+<a href="#"><span class="badge badge-primary">Nov 21, 2023 10:48:33</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 21, 2023 00:24:50</h3>
+<h3>Nov 21, 2023 10:48:33</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 21, 2023 00:25:20</h3>
+<h3>Nov 21, 2023 10:49:11</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -89,7 +89,7 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>2</h3>
+<h3>3</h3>
 </div></div>
 </div>
 </div>
@@ -105,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='33%'>
+<div><small data-tooltip='25%'>
 <b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='66%'><b>2</b> features failed,
+<small data-tooltip='75%'><b>3</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -128,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='78%'><b>15</b> scenarios passed</small></div>
+<div><small data-tooltip='74%'><b>23</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='21%'><b>4</b> scenarios failed,
+<small data-tooltip='25%'><b>8</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,9 +148,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='92%'><b>53</b> steps passed</small></div>
+<div><small data-tooltip='91%'><b>85</b> steps passed</small></div>
 <div>
-<small data-tooltip='7%'><b>4</b> steps failed,
+<small data-tooltip='8%'><b>8</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Dietician Login":16.06,"Dietician Role Module":10.239,"validating Dietician Delete and Logout request":0.414
+"Dietician Login":17.658,"Check Morbidity":3.891,"Dietician Role Module":11.468,"validating Dietician Delete and Logout request":0.495
 };
 </script>
 <div class="row">
@@ -185,20 +185,20 @@ var timeline = {
 <td>50%</td>
 </tr>
 <tr>
-<td>@01Del</td>
+<td>@morbidityModule</td>
+<td>8</td>
+<td>4</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0%</td>
+<td>66.667%</td>
 </tr>
 <tr>
-<td>@DieticianRole</td>
-<td>12</td>
-<td>3</td>
+<td>@DieticianLogin</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>80%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
 <td>@01DieticianLogin</td>
@@ -209,8 +209,48 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@DieticianLogin</td>
+<td>@05GetByFileIDPatient-asDietician</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetAllMorbidity</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@01Del</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@GetMorbiditybyName</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetMorbiditybyInvalidName</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>@logout</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -225,20 +265,12 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@03UpdatePatient</td>
-<td>1</td>
-<td>1</td>
+<td>@DieticianRole</td>
+<td>12</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
-<td>50%</td>
-</tr>
-<tr>
-<td>@logout</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>80%</td>
 </tr>
 <tr>
 <td>@01CreatePatient</td>
@@ -249,12 +281,12 @@ var timeline = {
 <td>87.5%</td>
 </tr>
 <tr>
-<td>@05GetByFileIDPatient-asDietician</td>
-<td>2</td>
+<td>@03UpdatePatient</td>
+<td>1</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>50%</td>
 </tr>
 </tbody>
 </table></div>
@@ -266,18 +298,18 @@ var timeline = {
 var statusGroup = {
 parentCount: 5,
 passParent: 1,
-failParent: 2,
+failParent: 3,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 15,
-failChild: 4,
+passChild: 23,
+failChild: 8,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 53,
-failGrandChild: 4,
+passGrandChild: 85,
+failGrandChild: 8,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
@@ -302,7 +334,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@04GetByIDPatient-asDietician</a><a class="dropdown-item" href="#">@01Del</a><a class="dropdown-item" href="#">@DieticianRole</a><a class="dropdown-item" href="#">@01DieticianLogin</a><a class="dropdown-item" href="#">@DieticianLogin</a><a class="dropdown-item" href="#">@02GetALLPatients-asDietician</a><a class="dropdown-item" href="#">@03UpdatePatient</a><a class="dropdown-item" href="#">@logout</a><a class="dropdown-item" href="#">@01CreatePatient</a><a class="dropdown-item" href="#">@05GetByFileIDPatient-asDietician</a>
+<a class="dropdown-item" href="#">@04GetByIDPatient-asDietician</a><a class="dropdown-item" href="#">@morbidityModule</a><a class="dropdown-item" href="#">@DieticianLogin</a><a class="dropdown-item" href="#">@01DieticianLogin</a><a class="dropdown-item" href="#">@05GetByFileIDPatient-asDietician</a><a class="dropdown-item" href="#">@GetAllMorbidity</a><a class="dropdown-item" href="#">@01Del</a><a class="dropdown-item" href="#">@GetMorbiditybyName</a><a class="dropdown-item" href="#">@GetMorbiditybyInvalidName</a><a class="dropdown-item" href="#">@logout</a><a class="dropdown-item" href="#">@02GetALLPatients-asDietician</a><a class="dropdown-item" href="#">@DieticianRole</a><a class="dropdown-item" href="#">@01CreatePatient</a><a class="dropdown-item" href="#">@03UpdatePatient</a>
 </ul>
 </li>
 </ul>
@@ -315,7 +347,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Dietician Login</p>
             <p class="text-sm">
-              <span>12:24:53 AM</span> / <span>00:00:16:060</span>
+              <span>10:48:37 AM</span> / <span>00:00:17:658</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -324,9 +356,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Dietician Login</h5>
-<span class='badge badge-success'>11.21.2023 12:24:53 AM</span>
-<span class='badge badge-danger'>11.21.2023 12:25:09 AM</span>
-<span class='badge badge-default'>00:00:16:060</span>
+<span class='badge badge-success'>11.21.2023 10:48:37 AM</span>
+<span class='badge badge-danger'>11.21.2023 10:48:54 AM</span>
+<span class='badge badge-default'>00:00:17:658</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -400,9 +432,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Dietician Role Module</p>
+            <p class="name">Check Morbidity</p>
             <p class="text-sm">
-              <span>12:25:09 AM</span> / <span>00:00:10:239</span>
+              <span>10:48:54 AM</span> / <span>00:00:03:891</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -410,10 +442,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Dietician Role Module</h5>
-<span class='badge badge-success'>11.21.2023 12:25:09 AM</span>
-<span class='badge badge-danger'>11.21.2023 12:25:20 AM</span>
-<span class='badge badge-default'>00:00:10:239</span>
+<h5 class="test-status text-fail">Check Morbidity</h5>
+<span class='badge badge-success'>11.21.2023 10:48:54 AM</span>
+<span class='badge badge-danger'>11.21.2023 10:48:58 AM</span>
+<span class='badge badge-default'>00:00:03:891</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -425,14 +457,462 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="12"><span class="badge log fail-bg mr-2">Fail</span>Dietician creating Patients.</div>
+        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Check if user able to retrieve all Morbidities</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="api.stepdefinitions.Morbidity_step.user_creates_get_request_for_all_all_morbidities()">
+                <span>Given User creates GET  Request for  All  all Morbidities</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="api.stepdefinitions.Morbidity_step.user_sends_https_request()">
+                <span>When User sends HTTPS Request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="api.stepdefinitions.Morbidity_step.user_receives_ok_status_with_response_body(java.lang.Integer)">
+                <span>Then User receives 200 OK Status with response body.</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Retrieve Morbidity condition by valid morbidityName</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Retrieve Morbidity condition by valid morbidityName</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User creates GET Request for the API endpoint with valid "TSH"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends HTTPS Reques</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User receives 200 OK Status with response  body.                                                                  Eg: [</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Retrieve Morbidity condition by valid morbidityName</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User creates GET Request for the API endpoint with valid "Fasting Glucose"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends HTTPS Reques</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User receives 200 OK Status with response  body.                                                                  Eg: [</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>Retrieve Morbidity condition by valid morbidityName</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User creates GET Request for the API endpoint with valid "Plasma Glucose"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends HTTPS Reques</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User receives 200 OK Status with response  body.                                                                  Eg: [</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>Retrieve Morbidity condition by valid morbidityName</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User creates GET Request for the API endpoint with valid "T3"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends HTTPS Reques</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User receives 200 OK Status with response  body.                                                                  Eg: [</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>Retrieve Morbidity condition by valid morbidityName</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User creates GET Request for the API endpoint with valid "HbA1c"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends HTTPS Reques</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User receives 200 OK Status with response  body.                                                                  Eg: [</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>Retrieve Morbidity condition by valid morbidityName</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User creates GET Request for the API endpoint with valid "Average Glucose"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends HTTPS Reques</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User receives 200 OK Status with response  body.                                                                  Eg: [</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="41"><span class="badge log fail-bg mr-2">Fail</span>retrieve Morbidity condition by Invalid morbidityname</div>
       </div>
     </div>
         <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
+                  <div class="node" id="42"><span class="badge log fail-bg mr-2">Fail</span>retrieve Morbidity condition by Invalid morbidityname</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User creates GET Request for the API endpoint with Invalid "T"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends HTTPS Reques</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then User receives 404  Status                                                                   Eg: [</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <404> but was <200>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at api.stepdefinitions.Morbidity_step.user_receives_ok_status_eg(Morbidity_step.java:92)
+	at ✽.User receives 404  Status                                                                   Eg: [(file:///C:/Users/anoop/eclipse-workspaceNew/API-Crafters/src/test/resources/features/02Morbidity.feature:30)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>retrieve Morbidity condition by Invalid morbidityname</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User creates GET Request for the API endpoint with Invalid "Xct"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends HTTPS Reques</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User receives 404  Status                                                                   Eg: [</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="50"><span class="badge log fail-bg mr-2">Fail</span>retrieve Morbidity condition by Invalid morbidityname</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User creates GET Request for the API endpoint with Invalid "A"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends HTTPS Reques</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then User receives 404  Status                                                                   Eg: [</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <404> but was <200>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at api.stepdefinitions.Morbidity_step.user_receives_ok_status_eg(Morbidity_step.java:92)
+	at ✽.User receives 404  Status                                                                   Eg: [(file:///C:/Users/anoop/eclipse-workspaceNew/API-Crafters/src/test/resources/features/02Morbidity.feature:30)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="54"><span class="badge log fail-bg mr-2">Fail</span>retrieve Morbidity condition by Invalid morbidityname</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User creates GET Request for the API endpoint with Invalid "S"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends HTTPS Reques</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then User receives 404  Status                                                                   Eg: [</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <404> but was <200>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at api.stepdefinitions.Morbidity_step.user_receives_ok_status_eg(Morbidity_step.java:92)
+	at ✽.User receives 404  Status                                                                   Eg: [(file:///C:/Users/anoop/eclipse-workspaceNew/API-Crafters/src/test/resources/features/02Morbidity.feature:30)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="58"><span class="badge log fail-bg mr-2">Fail</span>retrieve Morbidity condition by Invalid morbidityname</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User creates GET Request for the API endpoint with Invalid "Se"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends HTTPS Reques</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then User receives 404  Status                                                                   Eg: [</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <404> but was <200>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at api.stepdefinitions.Morbidity_step.user_receives_ok_status_eg(Morbidity_step.java:92)
+	at ✽.User receives 404  Status                                                                   Eg: [(file:///C:/Users/anoop/eclipse-workspaceNew/API-Crafters/src/test/resources/features/02Morbidity.feature:30)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="62"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Dietician Role Module</p>
+            <p class="text-sm">
+              <span>10:48:58 AM</span> / <span>00:00:11:468</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Dietician Role Module</h5>
+<span class='badge badge-success'>11.21.2023 10:48:58 AM</span>
+<span class='badge badge-danger'>11.21.2023 10:49:10 AM</span>
+<span class='badge badge-default'>00:00:11:468</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=62</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="63"><span class="badge log fail-bg mr-2">Fail</span>Dietician creating Patients.</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="64"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -456,7 +936,7 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
+                  <div class="node" id="68"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -480,7 +960,7 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
+                  <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -504,7 +984,7 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
+                  <div class="node" id="76"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -528,7 +1008,7 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
+                  <div class="node" id="80"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -552,7 +1032,7 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
+                  <div class="node" id="84"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -576,7 +1056,7 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
+                  <div class="node" id="88"><span class="badge log pass-bg mr-2">Pass</span>Dietician creating Patients.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -600,7 +1080,7 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="41"><span class="badge log fail-bg mr-2">Fail</span>Dietician creating Patients.</div>
+                  <div class="node" id="92"><span class="badge log fail-bg mr-2">Fail</span>Dietician creating Patients.</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
@@ -625,8 +1105,6 @@ Expected status code <201> but was <400>.
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
@@ -655,7 +1133,7 @@ Expected status code <201> but was <400>.
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>Check if dietician able to retrieve all the Patients.</div>
+        <div class="node" id="96"><span class="badge log pass-bg mr-2">Pass</span>Check if dietician able to retrieve all the Patients.</div>
       </div>
     </div>
         <div class="collapse">
@@ -681,14 +1159,14 @@ Expected status code <201> but was <400>.
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="49"><span class="badge log fail-bg mr-2">Fail</span>Check if dietician able to Update Patient detals.</div>
+        <div class="node" id="100"><span class="badge log fail-bg mr-2">Fail</span>Check if dietician able to Update Patient detals.</div>
       </div>
     </div>
         <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="50"><span class="badge log fail-bg mr-2">Fail</span>Check if dietician able to Update Patient detals.</div>
+                  <div class="node" id="101"><span class="badge log fail-bg mr-2">Fail</span>Check if dietician able to Update Patient detals.</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
@@ -739,7 +1217,7 @@ Expected status code <200> but was <404>.
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="54"><span class="badge log pass-bg mr-2">Pass</span>Check if dietician able to Update Patient detals.</div>
+                  <div class="node" id="105"><span class="badge log pass-bg mr-2">Pass</span>Check if dietician able to Update Patient detals.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -765,14 +1243,14 @@ Expected status code <200> but was <404>.
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="58"><span class="badge log fail-bg mr-2">Fail</span>Check if dietician able to retrieve a Patient by ID.</div>
+        <div class="node" id="109"><span class="badge log fail-bg mr-2">Fail</span>Check if dietician able to retrieve a Patient by ID.</div>
       </div>
     </div>
         <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="59"><span class="badge log fail-bg mr-2">Fail</span>Check if dietician able to retrieve a Patient by ID.</div>
+                  <div class="node" id="110"><span class="badge log fail-bg mr-2">Fail</span>Check if dietician able to retrieve a Patient by ID.</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
@@ -823,7 +1301,7 @@ Expected status code <200> but was <404>.
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>Check if dietician able to retrieve a Patient by ID.</div>
+                  <div class="node" id="114"><span class="badge log pass-bg mr-2">Pass</span>Check if dietician able to retrieve a Patient by ID.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -849,14 +1327,14 @@ Expected status code <200> but was <404>.
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="67"><span class="badge log pass-bg mr-2">Pass</span>Check if dietician able to retrieve a Patient detail by FielID.</div>
+        <div class="node" id="118"><span class="badge log pass-bg mr-2">Pass</span>Check if dietician able to retrieve a Patient detail by FielID.</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="68"><span class="badge log pass-bg mr-2">Pass</span>Check if dietician able to retrieve a Patient detail by FielID.</div>
+                  <div class="node" id="119"><span class="badge log pass-bg mr-2">Pass</span>Check if dietician able to retrieve a Patient detail by FielID.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -880,7 +1358,7 @@ Expected status code <200> but was <404>.
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Check if dietician able to retrieve a Patient detail by FielID.</div>
+                  <div class="node" id="123"><span class="badge log pass-bg mr-2">Pass</span>Check if dietician able to retrieve a Patient detail by FielID.</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -906,14 +1384,14 @@ Expected status code <200> but was <404>.
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="76"
+        <li class="test-item"  status="fail" test-id="127"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validating Dietician Delete and Logout request</p>
             <p class="text-sm">
-              <span>12:25:20 AM</span> / <span>00:00:00:414</span>
+              <span>10:49:10 AM</span> / <span>00:00:00:495</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -922,10 +1400,10 @@ Expected status code <200> but was <404>.
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">validating Dietician Delete and Logout request</h5>
-<span class='badge badge-success'>11.21.2023 12:25:20 AM</span>
-<span class='badge badge-danger'>11.21.2023 12:25:20 AM</span>
-<span class='badge badge-default'>00:00:00:414</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=76</span>
+<span class='badge badge-success'>11.21.2023 10:49:10 AM</span>
+<span class='badge badge-danger'>11.21.2023 10:49:10 AM</span>
+<span class='badge badge-default'>00:00:00:495</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=127</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -936,7 +1414,7 @@ Expected status code <200> but was <404>.
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="77"><span class="badge log fail-bg mr-2">Fail</span>Verify that patient id is deleted using valid url</div>
+        <div class="node" id="128"><span class="badge log fail-bg mr-2">Fail</span>Verify that patient id is deleted using valid url</div>
       </div>
     </div>
         <div class="">
@@ -989,7 +1467,7 @@ Expected status code <200> but was <404>.
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>Check if user able to logout as a Dietician</div>
+        <div class="node" id="132"><span class="badge log pass-bg mr-2">Pass</span>Check if user able to logout as a Dietician</div>
       </div>
     </div>
         <div class="collapse">
@@ -1028,7 +1506,7 @@ Expected status code <200> but was <404>.
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">10</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">14</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -1058,9 +1536,9 @@ Expected status code <200> but was <404>.
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:25:19 AM</td>
+<td>10:49:09 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='59'>Check if dietician able to retrieve a Patient by ID.</a>
+<a href="#" class="linked" test-id='62' id='110'>Check if dietician able to retrieve a Patient by ID.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve a Patient by ID.</span>
 </div>
@@ -1068,11 +1546,333 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:19 AM</td>
+<td>10:49:09 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='63'>Check if dietician able to retrieve a Patient by ID.</a>
+<a href="#" class="linked" test-id='62' id='114'>Check if dietician able to retrieve a Patient by ID.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve a Patient by ID.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@morbidityModule</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@morbidityModule</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='12'>Check if user able to retrieve all Morbidities</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Check if user able to retrieve all Morbidities</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='17'>Retrieve Morbidity condition by valid morbidityName</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Retrieve Morbidity condition by valid morbidityName</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='21'>Retrieve Morbidity condition by valid morbidityName</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Retrieve Morbidity condition by valid morbidityName</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='25'>Retrieve Morbidity condition by valid morbidityName</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Retrieve Morbidity condition by valid morbidityName</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='29'>Retrieve Morbidity condition by valid morbidityName</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Retrieve Morbidity condition by valid morbidityName</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='33'>Retrieve Morbidity condition by valid morbidityName</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Retrieve Morbidity condition by valid morbidityName</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='37'>Retrieve Morbidity condition by valid morbidityName</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Retrieve Morbidity condition by valid morbidityName</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:48:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='42'>retrieve Morbidity condition by Invalid morbidityname</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='46'>retrieve Morbidity condition by Invalid morbidityname</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:48:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='50'>retrieve Morbidity condition by Invalid morbidityname</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:48:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='54'>retrieve Morbidity condition by Invalid morbidityname</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:48:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='58'>retrieve Morbidity condition by Invalid morbidityname</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@DieticianLogin</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DieticianLogin</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Check if user able to login as a Dietician</a>
+<div class="">
+<span class="badge badge-default">Dietician Login.Check if user able to login as a Dietician</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Check if user able to login as a Dietician</a>
+<div class="">
+<span class="badge badge-default">Dietician Login.Check if user able to login as a Dietician</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@01DieticianLogin</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@01DieticianLogin</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Check if user able to login as a Dietician</a>
+<div class="">
+<span class="badge badge-default">Dietician Login.Check if user able to login as a Dietician</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Check if user able to login as a Dietician</a>
+<div class="">
+<span class="badge badge-default">Dietician Login.Check if user able to login as a Dietician</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@05GetByFileIDPatient-asDietician</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@05GetByFileIDPatient-asDietician</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:49:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='62' id='119'>Check if dietician able to retrieve a Patient detail by FielID.</a>
+<div class="">
+<span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve a Patient detail by FielID.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:49:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='62' id='123'>Check if dietician able to retrieve a Patient detail by FielID.</a>
+<div class="">
+<span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve a Patient detail by FielID.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetAllMorbidity</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetAllMorbidity</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='12'>Check if user able to retrieve all Morbidities</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Check if user able to retrieve all Morbidities</span>
 </div>
 </td>
 </tr>
@@ -1104,11 +1904,247 @@ Expected status code <200> but was <404>.
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:25:20 AM</td>
+<td>10:49:10 AM</td>
 <td>
-<a href="#" class="linked" test-id='76' id='77'>Verify that patient id is deleted using valid url</a>
+<a href="#" class="linked" test-id='127' id='128'>Verify that patient id is deleted using valid url</a>
 <div class="">
 <span class="badge badge-default">validating Dietician Delete and Logout request.Verify that patient id is deleted using valid url</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@GetMorbiditybyName</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetMorbiditybyName</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='17'>Retrieve Morbidity condition by valid morbidityName</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Retrieve Morbidity condition by valid morbidityName</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='21'>Retrieve Morbidity condition by valid morbidityName</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Retrieve Morbidity condition by valid morbidityName</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='25'>Retrieve Morbidity condition by valid morbidityName</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Retrieve Morbidity condition by valid morbidityName</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='29'>Retrieve Morbidity condition by valid morbidityName</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Retrieve Morbidity condition by valid morbidityName</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='33'>Retrieve Morbidity condition by valid morbidityName</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Retrieve Morbidity condition by valid morbidityName</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='37'>Retrieve Morbidity condition by valid morbidityName</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.Retrieve Morbidity condition by valid morbidityName</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@GetMorbiditybyInvalidName</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetMorbiditybyInvalidName</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:48:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='42'>retrieve Morbidity condition by Invalid morbidityname</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:48:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='46'>retrieve Morbidity condition by Invalid morbidityname</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:48:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='50'>retrieve Morbidity condition by Invalid morbidityname</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:48:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='54'>retrieve Morbidity condition by Invalid morbidityname</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:48:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='58'>retrieve Morbidity condition by Invalid morbidityname</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@logout</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@logout</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:49:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='127' id='132'>Check if user able to logout as a Dietician</a>
+<div class="">
+<span class="badge badge-default">validating Dietician Delete and Logout request.Check if user able to logout as a Dietician</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@02GetALLPatients-asDietician</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@02GetALLPatients-asDietician</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:49:08 AM</td>
+<td>
+<a href="#" class="linked" test-id='62' id='96'>Check if dietician able to retrieve all the Patients.</a>
+<div class="">
+<span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve all the Patients.</span>
 </div>
 </td>
 </tr>
@@ -1142,9 +2178,9 @@ Expected status code <200> but was <404>.
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:09 AM</td>
+<td>10:48:58 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='13'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='64'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1152,9 +2188,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:11 AM</td>
+<td>10:49:00 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='17'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='68'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1162,9 +2198,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:12 AM</td>
+<td>10:49:02 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='21'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='72'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1172,9 +2208,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:13 AM</td>
+<td>10:49:03 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='25'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='76'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1182,9 +2218,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:14 AM</td>
+<td>10:49:04 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='29'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='80'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1192,9 +2228,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:15 AM</td>
+<td>10:49:05 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='33'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='84'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1202,9 +2238,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:16 AM</td>
+<td>10:49:06 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='37'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='88'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1212,9 +2248,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:25:17 AM</td>
+<td>10:49:07 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='41'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='92'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1222,9 +2258,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:18 AM</td>
+<td>10:49:08 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='45'>Check if dietician able to retrieve all the Patients.</a>
+<a href="#" class="linked" test-id='62' id='96'>Check if dietician able to retrieve all the Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve all the Patients.</span>
 </div>
@@ -1232,9 +2268,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:25:18 AM</td>
+<td>10:49:08 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='50'>Check if dietician able to Update Patient detals.</a>
+<a href="#" class="linked" test-id='62' id='101'>Check if dietician able to Update Patient detals.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Check if dietician able to Update Patient detals.</span>
 </div>
@@ -1242,9 +2278,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:18 AM</td>
+<td>10:49:09 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='54'>Check if dietician able to Update Patient detals.</a>
+<a href="#" class="linked" test-id='62' id='105'>Check if dietician able to Update Patient detals.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Check if dietician able to Update Patient detals.</span>
 </div>
@@ -1252,9 +2288,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:25:19 AM</td>
+<td>10:49:09 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='59'>Check if dietician able to retrieve a Patient by ID.</a>
+<a href="#" class="linked" test-id='62' id='110'>Check if dietician able to retrieve a Patient by ID.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve a Patient by ID.</span>
 </div>
@@ -1262,9 +2298,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:19 AM</td>
+<td>10:49:09 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='63'>Check if dietician able to retrieve a Patient by ID.</a>
+<a href="#" class="linked" test-id='62' id='114'>Check if dietician able to retrieve a Patient by ID.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve a Patient by ID.</span>
 </div>
@@ -1272,9 +2308,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:19 AM</td>
+<td>10:49:10 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='68'>Check if dietician able to retrieve a Patient detail by FielID.</a>
+<a href="#" class="linked" test-id='62' id='119'>Check if dietician able to retrieve a Patient detail by FielID.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve a Patient detail by FielID.</span>
 </div>
@@ -1282,223 +2318,11 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:19 AM</td>
+<td>10:49:10 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='72'>Check if dietician able to retrieve a Patient detail by FielID.</a>
+<a href="#" class="linked" test-id='62' id='123'>Check if dietician able to retrieve a Patient detail by FielID.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve a Patient detail by FielID.</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@01DieticianLogin</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@01DieticianLogin</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:24:53 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>Check if user able to login as a Dietician</a>
-<div class="">
-<span class="badge badge-default">Dietician Login.Check if user able to login as a Dietician</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>Check if user able to login as a Dietician</a>
-<div class="">
-<span class="badge badge-default">Dietician Login.Check if user able to login as a Dietician</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@DieticianLogin</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@DieticianLogin</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:24:53 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>Check if user able to login as a Dietician</a>
-<div class="">
-<span class="badge badge-default">Dietician Login.Check if user able to login as a Dietician</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>Check if user able to login as a Dietician</a>
-<div class="">
-<span class="badge badge-default">Dietician Login.Check if user able to login as a Dietician</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@02GetALLPatients-asDietician</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@02GetALLPatients-asDietician</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:18 AM</td>
-<td>
-<a href="#" class="linked" test-id='11' id='45'>Check if dietician able to retrieve all the Patients.</a>
-<div class="">
-<span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve all the Patients.</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@03UpdatePatient</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@03UpdatePatient</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>00:25:18 AM</td>
-<td>
-<a href="#" class="linked" test-id='11' id='50'>Check if dietician able to Update Patient detals.</a>
-<div class="">
-<span class="badge badge-default">Dietician Role Module.Check if dietician able to Update Patient detals.</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:18 AM</td>
-<td>
-<a href="#" class="linked" test-id='11' id='54'>Check if dietician able to Update Patient detals.</a>
-<div class="">
-<span class="badge badge-default">Dietician Role Module.Check if dietician able to Update Patient detals.</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@logout</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@logout</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:20 AM</td>
-<td>
-<a href="#" class="linked" test-id='76' id='81'>Check if user able to logout as a Dietician</a>
-<div class="">
-<span class="badge badge-default">validating Dietician Delete and Logout request.Check if user able to logout as a Dietician</span>
 </div>
 </td>
 </tr>
@@ -1532,9 +2356,9 @@ Expected status code <200> but was <404>.
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:09 AM</td>
+<td>10:48:58 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='13'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='64'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1542,9 +2366,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:11 AM</td>
+<td>10:49:00 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='17'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='68'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1552,9 +2376,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:12 AM</td>
+<td>10:49:02 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='21'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='72'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1562,9 +2386,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:13 AM</td>
+<td>10:49:03 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='25'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='76'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1572,9 +2396,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:14 AM</td>
+<td>10:49:04 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='29'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='80'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1582,9 +2406,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:15 AM</td>
+<td>10:49:05 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='33'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='84'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1592,9 +2416,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:16 AM</td>
+<td>10:49:06 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='37'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='88'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1602,9 +2426,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:25:17 AM</td>
+<td>10:49:07 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='41'>Dietician creating Patients.</a>
+<a href="#" class="linked" test-id='62' id='92'>Dietician creating Patients.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients.</span>
 </div>
@@ -1617,15 +2441,17 @@ Expected status code <200> but was <404>.
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@05GetByFileIDPatient-asDietician</p>
+<p class="name">@03UpdatePatient</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@05GetByFileIDPatient-asDietician</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<h4>@03UpdatePatient</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1636,23 +2462,23 @@ Expected status code <200> but was <404>.
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:19 AM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:49:08 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='68'>Check if dietician able to retrieve a Patient detail by FielID.</a>
+<a href="#" class="linked" test-id='62' id='101'>Check if dietician able to Update Patient detals.</a>
 <div class="">
-<span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve a Patient detail by FielID.</span>
+<span class="badge badge-default">Dietician Role Module.Check if dietician able to Update Patient detals.</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:25:19 AM</td>
+<td>10:49:09 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='72'>Check if dietician able to retrieve a Patient detail by FielID.</a>
+<a href="#" class="linked" test-id='62' id='105'>Check if dietician able to Update Patient detals.</a>
 <div class="">
-<span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve a Patient detail by FielID.</span>
+<span class="badge badge-default">Dietician Role Module.Check if dietician able to Update Patient detals.</span>
 </div>
 </td>
 </tr>
@@ -1679,15 +2505,15 @@ Expected status code <200> but was <404>.
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>4</span>
+<span class='badge log badge-danger'>8</span>
 </span>
 <p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">4 tests</p>
+<p class="duration text-sm">8 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>4 failed</span>
+<span status="fail" class='badge log badge-danger'>8 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1700,9 +2526,49 @@ Expected status code <200> but was <404>.
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:25:18 AM</td>
+<td>10:48:57 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='44'>Then Dietician receives for "postPatient_Valid" Patient Created Status with response body.</a>
+<a href="#" class="linked" test-id='11' id='45'>Then User receives 404 Status Eg: [</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname.Then User receives 404 Status Eg: [</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:48:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='53'>Then User receives 404 Status Eg: [</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname.Then User receives 404 Status Eg: [</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:48:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='57'>Then User receives 404 Status Eg: [</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname.Then User receives 404 Status Eg: [</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:48:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='61'>Then User receives 404 Status Eg: [</a>
+<div class="">
+<span class="badge badge-default">Check Morbidity.retrieve Morbidity condition by Invalid morbidityname.Then User receives 404 Status Eg: [</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:49:08 AM</td>
+<td>
+<a href="#" class="linked" test-id='62' id='95'>Then Dietician receives for "postPatient_Valid" Patient Created Status with response body.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Dietician creating Patients..Then Dietician receives for "postPatient_Valid" Patient Created Status with response body.</span>
 </div>
@@ -1710,9 +2576,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:25:18 AM</td>
+<td>10:49:09 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='53'>Then Dietician receives for "updatePatient_Valid" Patient Updated Status with response body.</a>
+<a href="#" class="linked" test-id='62' id='104'>Then Dietician receives for "updatePatient_Valid" Patient Updated Status with response body.</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Check if dietician able to Update Patient detals..Then Dietician receives for "updatePatient_Valid" Patient Updated Status with response body.</span>
 </div>
@@ -1720,9 +2586,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:25:19 AM</td>
+<td>10:49:09 AM</td>
 <td>
-<a href="#" class="linked" test-id='11' id='62'>Then Dietician receives Status for corresponding "PatientID_Valid" Patients data</a>
+<a href="#" class="linked" test-id='62' id='113'>Then Dietician receives Status for corresponding "PatientID_Valid" Patients data</a>
 <div class="">
 <span class="badge badge-default">Dietician Role Module.Check if dietician able to retrieve a Patient by ID..Then Dietician receives Status for corresponding "PatientID_Valid" Patients data</span>
 </div>
@@ -1730,9 +2596,9 @@ Expected status code <200> but was <404>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:25:20 AM</td>
+<td>10:49:10 AM</td>
 <td>
-<a href="#" class="linked" test-id='76' id='80'>Then the response will return delete status 200</a>
+<a href="#" class="linked" test-id='127' id='131'>Then the response will return delete status 200</a>
 <div class="">
 <span class="badge badge-default">validating Dietician Delete and Logout request.Verify that patient id is deleted using valid url.Then the response will return delete status 200</span>
 </div>
