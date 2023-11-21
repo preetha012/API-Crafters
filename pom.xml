@@ -21,7 +21,7 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-		 <dependency>
+		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>7.12.0</version>
@@ -33,18 +33,17 @@
    		 <groupId>io.cucumber</groupId>
     	<artifactId>cucumber-testng</artifactId>
    		 <version>7.12.1</version>
-	</dependency>-->
+	</dependency> -->
 	
-	<!-- https://mvnrepository.com/artifact/junit/junit -->
+<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.13.2</version>
 			<scope>test</scope>
 		</dependency>
-	
-	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
- 
+
+		
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 		<dependency>
 		    <groupId>io.rest-assured</groupId>
@@ -150,18 +149,13 @@
     		<version>1.18.20</version>
 		</dependency>
 		
-		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+				<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-core</artifactId>
-			<version>2.15.2</version>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.13.0</version>
 		</dependency>
-		
-		<dependency>
-        	<groupId>com.fasterxml.jackson.core</groupId>
-        	<artifactId>jackson-databind</artifactId>
-        	<version>2.5.3</version>
-    	</dependency>
+
 
  </dependencies>
 		
