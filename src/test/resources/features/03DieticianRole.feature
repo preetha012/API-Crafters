@@ -29,7 +29,8 @@ Feature: Dietician Role Module
 
     Examples: 
       | KeyOption        | Sheetname     |
-      | putPatient_Valid | createPatient |
+      | updatePatient_Valid | createPatient |
+      | updatePatient_InValid | createPatient |
 
   @03GetByIDPatient-asDietician
   Scenario Outline: Check if dietician able to retrieve a Patient by ID.

@@ -30,4 +30,16 @@ public class ConfigReader {
 		String xlPath = pro.getProperty("excel_path");
 		return xlPath;
 	}
+	
+	//get PDf Report Path
+	public String getPdfReportpath() {
+		String pdfReportPath = pro.getProperty("Pdf_Report1");
+		return pdfReportPath;
+	}
+	
+	// get 201 Patient Create sucess Schema
+	public String postSucessSchema() {
+		String post201Schema = pro.getProperty("Schema_postSucess");
+		return post201Schema;
+	}
 }

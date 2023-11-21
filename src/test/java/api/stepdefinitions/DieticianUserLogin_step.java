@@ -33,7 +33,7 @@ public class DieticianUserLogin_step {
 	        this.request = RestAssured
 	        		.given().log().all()
 	        		.header("Content-Type", "application/json");
-	       LoggerLoad.logInfo("Request for Dietician Login Header Validated");
+	       LoggerLoad.logInfo("Request for Dietician Login Header Validated"+request.toString());
 		  		
 	}
 
@@ -44,7 +44,7 @@ public class DieticianUserLogin_step {
 			userpayload = UserRequestBody.PostUserBody(KeyOption,sheetname);
 	    	 response = request.body(userpayload).post(Routes.login_Url);
 	    	 
-	    	LoggerLoad.logInfo("Dietician Login RequestBody passed");
+	    	LoggerLoad.logInfo("Dietician Login RequestBody passed"+response.getStatusCode());
 	      
 	      }	
 

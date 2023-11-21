@@ -1,0 +1,108 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome10",
+    "definitions": {
+        "Welcome10": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "patientId": {
+                    "type": "integer"
+                },
+                "FirstName": {
+                    "type": "string"
+                },
+                "LastName": {
+                    "type": "string"
+                },
+                "ContactNumber": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "Email": {
+                    "type": "string"
+                },
+                "Allergy": {
+                    "type": "string"
+                },
+                "FoodCategory": {
+                    "type": "string"
+                },
+                "FileMorbidity": {
+                    "$ref": "#/definitions/FileMorbidity"
+                },
+                "FileMorbidityCondition": {
+                    "$ref": "#/definitions/FileMorbidityCondition"
+                },
+                "DateOfBirth": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "DieticianId": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "Allergy",
+                "ContactNumber",
+                "DateOfBirth",
+                "DieticianId",
+                "Email",
+                "FileMorbidity",
+                "FileMorbidityCondition",
+                "FirstName",
+                "FoodCategory",
+                "LastName",
+                "patientId"
+            ],
+            "title": "Welcome10"
+        },
+        "FileMorbidity": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "655c06bdfa57dd184cbea0be": {
+                    "$ref": "#/definitions/655C06Bdfa57Dd184Cbea0Be"
+                }
+            },
+            "required": [
+                "655c06bdfa57dd184cbea0be"
+            ],
+            "title": "FileMorbidity"
+        },
+        "655C06Bdfa57Dd184Cbea0Be": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "T4": {
+                    "type": "string"
+                },
+                "TSH": {
+                    "type": "string"
+                },
+                "T3": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "T3",
+                "T4",
+                "TSH"
+            ],
+            "title": "655C06Bdfa57Dd184Cbea0Be"
+        },
+        "FileMorbidityCondition": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "655c06bdfa57dd184cbea0be": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "655c06bdfa57dd184cbea0be"
+            ],
+            "title": "FileMorbidityCondition"
+        }
+    }
+}
