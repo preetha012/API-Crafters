@@ -32,8 +32,8 @@ public class Morbidity_step {
 	@Given("User creates GET  Request for  All  all Morbidities")
 	public void user_creates_get_request_for_all_all_morbidities() {
 	    RestAssured.baseURI = Routes.base_url;
-	    this.request = RestAssured.given().log().all()
-	    .header("Authorization", "Bearer " + DieticianUserLogin_step.Dietician_token);
+	    this.request = RestAssured.given().log().all();
+	//    .header("Authorization", "Bearer " + DieticianUserLogin_step.Dietician_token);
 	}
 	@When("User sends HTTPS Request")
 	public void user_sends_https_request() {
@@ -55,7 +55,7 @@ public class Morbidity_step {
 	   
 	   RestAssured.baseURI = Routes.base_url;
 	   this.request = RestAssured.given().log().all()
-			   .header("Authorization", "Bearer " +DieticianUserLogin_step.Dietician_token)
+	//		   .header("Authorization", "Bearer " +DieticianUserLogin_step.Dietician_token)
 			   .pathParam("morbidityName", morbidityname );
 			   
 			  
@@ -82,7 +82,7 @@ public class Morbidity_step {
 	   
 		RestAssured.baseURI = Routes.base_url;
 		   this.request = RestAssured.given().log().all()
-				   .header("Authorization", "Bearer " +DieticianUserLogin_step.Dietician_token)
+	//			   .header("Authorization", "Bearer " +DieticianUserLogin_step.Dietician_token)
 				   .pathParam("morbidityName", invalidMorbidityName );
 	}
 	

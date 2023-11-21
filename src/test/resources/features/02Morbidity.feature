@@ -16,26 +16,26 @@ Then User receives 200 OK Status with response  body.                           
 
 Examples: 
       | morbidityName  | 
-   #   | TSH | 
+      | TSH | 
       | Fasting Glucose |
-    #  |Plasma Glucose |
-    #  |T3 |
-    #  |HbA1c |
-    #  | Average Glucose |
+      |Plasma Glucose |
+      |T3 |
+      |HbA1c |
+      | Average Glucose |
       
-#@GetMorbiditybyInvalidName
-#Scenario Outline: retrieve Morbidity condition by Invalid morbidityname
-#Given User creates GET Request for the API endpoint with Invalid "<InvalidmorbidityName>"
-#When User sends HTTPS Reques
-#Then User receives 404  Status                                                                   Eg: [
+@GetMorbiditybyInvalidName
+Scenario Outline: retrieve Morbidity condition by Invalid morbidityname
+Given User creates GET Request for the API endpoint with Invalid "<InvalidmorbidityName>"
+When User sends HTTPS Reques
+Then User receives 404  Status                                                                   Eg: [
 
-#Examples: 
-#			|InvalidmorbidityName|
-#      | T  | 
- #     | Xct | 
- #     |A |
-#			|S |
-#			|Se |
+Examples: 
+			|InvalidmorbidityName|
+      | T  | 
+      | Xct | 
+      |A |
+			|S |
+			|Se |
 
 
       
