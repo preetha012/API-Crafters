@@ -30,4 +30,36 @@ public class ConfigReader {
 		String xlPath = pro.getProperty("excel_path");
 		return xlPath;
 	}
+	
+	public String getLoginJsonSchemaPath() {
+		String jsPath = pro.getProperty("login_jsonSchema");
+		return jsPath;
+	}
+	
+	public int get_ReportPid() {
+		String getReportPid = pro.getProperty("getReportPid");
+		
+		return Integer.parseInt(getReportPid);
+	
+	}
+	
+	public int get_ReportInvalidPid() {
+		String getReportInvalidPid = pro.getProperty("getReportInvalidPid");
+		
+		return Integer.parseInt(getReportInvalidPid);
+	
+	}
+	
+	public String get_ReportFileId() {
+		String getReportFileId = pro.getProperty("getReportFileId");
+		
+		return getReportFileId; 
+	}
+		
+		public String get_Report_InvalidFileId() {
+			
+			String getReportInvalidFileId = pro.getProperty("getReportInvalidFileId");
+			
+			return getReportInvalidFileId;
+	}
 }
