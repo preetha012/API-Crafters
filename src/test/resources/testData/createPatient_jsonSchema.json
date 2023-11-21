@@ -1,0 +1,107 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome9",
+    "definitions": {
+        "Welcome9": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "patientId": {
+                    "type": "integer"
+                },
+                "FirstName": {
+                    "type": "string"
+                },
+                "LastName": {
+                    "type": "string"
+                },
+                "ContactNumber": {
+                    "type": "string"
+                },
+                "Email": {
+                    "type": "string"
+                },
+                "Allergy": {
+                    "type": "string"
+                },
+                "FoodCategory": {
+                    "type": "string"
+                },
+                "FileMorbidity": {
+                    "$ref": "#/definitions/FileMorbidity"
+                },
+                "FileMorbidityCondition": {
+                    "$ref": "#/definitions/FileMorbidityCondition"
+                },
+                "DateOfBirth": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "DieticianId": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "Allergy",
+                "ContactNumber",
+                "DateOfBirth",
+                "DieticianId",
+                "Email",
+                "FileMorbidity",
+                "FileMorbidityCondition",
+                "FirstName",
+                "FoodCategory",
+                "LastName",
+                "patientId"
+            ],
+            "title": "Welcome9"
+        },
+        "FileMorbidity": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "65584ac2ec1809245b7d45b4": {
+                    "$ref": "#/definitions/65584Ac2Ec1809245B7D45B4"
+                }
+            },
+            "required": [
+                "65584ac2ec1809245b7d45b4"
+            ],
+            "title": "FileMorbidity"
+        },
+        "65584Ac2Ec1809245B7D45B4": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "T4": {
+                    "type": "string"
+                },
+                "TSH": {
+                    "type": "string"
+                },
+                "T3": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "T3",
+                "T4",
+                "TSH"
+            ],
+            "title": "65584Ac2Ec1809245B7D45B4"
+        },
+        "FileMorbidityCondition": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "65584ac2ec1809245b7d45b4": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "65584ac2ec1809245b7d45b4"
+            ],
+            "title": "FileMorbidityCondition"
+        }
+    }
+}

@@ -42,8 +42,8 @@ public class DieticianRole {
 	public static PatientPayload patientPayload;
 	public static int PatientId_static;
 	public static String FileId_static;
-	
 	 File file = new File("./src/test/resources/testData/HyperThyroid_Report_final.pdf");
+	 
 	
 
 	/////***************** POST Patient *****************************
@@ -276,7 +276,7 @@ public class DieticianRole {
 		try {
 			
 			if (KeyOption.equals("PatientID_Valid")) {
-				
+				System.out.println("Patient Id to get--->>>"+PatientId_static);
 				this.response = request.when()
 						.pathParam("patientId", PatientId_static)
 						.get(Routes.GetPatient_ByPatientId_Url);
@@ -284,8 +284,9 @@ public class DieticianRole {
 			}else if(KeyOption.equals("PatientID_InValid")) {
 				
 				this.response = request.when()
-						.pathParam("patientId", 0000)
+						.pathParam("patientId", 3456)
 						.get(Routes.GetPatient_ByPatientId_Url);
+				LoggerLoad.logInfo("Dietician should view only his Patients, he is able to see other Patient Details now !");
 			}	
 			LoggerLoad.logInfo("GET Single Patient Request send with endpoint");
 			
