@@ -276,7 +276,7 @@ public class DieticianRole {
 		try {
 			
 			if (KeyOption.equals("PatientID_Valid")) {
-				
+				System.out.println("Patient Id to get--->>>"+PatientId_static);
 				this.response = request.when()
 						.pathParam("patientId", PatientId_static)
 						.get(Routes.GetPatient_ByPatientId_Url);

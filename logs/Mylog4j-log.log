@@ -1498,3 +1498,109 @@
 [INFO ] 2023-11-21 10:49:10.196 [main] LoggerLoad - GET FileID Request given!
 [INFO ] 2023-11-21 10:49:10.436 [main] LoggerLoad - GET FileID for In_Valid ID Request send!
 [INFO ] 2023-11-21 10:49:10.442 [main] LoggerLoad - Response for InValid FileID Validated
+[INFO ] 2023-11-21 13:03:19.453 [main] LoggerLoad - Request for Dietician Login Header Validatedio.restassured.internal.RequestSpecificationImpl@574b7f4a
+[INFO ] 2023-11-21 13:03:25.682 [main] LoggerLoad - Dietician Login RequestBody passed401
+[INFO ] 2023-11-21 13:03:27.233 [main] LoggerLoad - Dietician Login for Invalid Request Validated
+[INFO ] 2023-11-21 13:03:27.458 [main] LoggerLoad - Request for Dietician Login Header Validatedio.restassured.internal.RequestSpecificationImpl@1fec9d33
+[INFO ] 2023-11-21 13:03:28.190 [main] LoggerLoad - Dietician Login RequestBody passed200
+[INFO ] 2023-11-21 13:03:28.324 [main] LoggerLoad - Dietician Login for Valid Request Validated
+[INFO ] 2023-11-21 13:03:31.440 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU4OTc5NSwiZXhwIjoxNzAwNjE4NTk1fQ.TnfvHLXqengH9z7_SZzhqU_9QQjTKoU-gx_FiHTmV3xtmjG1cjIYBK_I5PtSTrdIKKx_uHomi9DSG5fCrWJOMw
+[INFO ] 2023-11-21 13:03:32.720 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:03:32.725 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:03:32.750 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU4OTc5NSwiZXhwIjoxNzAwNjE4NTk1fQ.TnfvHLXqengH9z7_SZzhqU_9QQjTKoU-gx_FiHTmV3xtmjG1cjIYBK_I5PtSTrdIKKx_uHomi9DSG5fCrWJOMw
+[INFO ] 2023-11-21 13:03:33.765 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:03:33.770 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:03:33.788 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU4OTc5NSwiZXhwIjoxNzAwNjE4NTk1fQ.TnfvHLXqengH9z7_SZzhqU_9QQjTKoU-gx_FiHTmV3xtmjG1cjIYBK_I5PtSTrdIKKx_uHomi9DSG5fCrWJOMw
+[INFO ] 2023-11-21 13:03:34.868 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:03:34.872 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:03:34.888 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU4OTc5NSwiZXhwIjoxNzAwNjE4NTk1fQ.TnfvHLXqengH9z7_SZzhqU_9QQjTKoU-gx_FiHTmV3xtmjG1cjIYBK_I5PtSTrdIKKx_uHomi9DSG5fCrWJOMw
+[INFO ] 2023-11-21 13:03:35.841 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:03:35.848 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:03:35.873 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU4OTc5NSwiZXhwIjoxNzAwNjE4NTk1fQ.TnfvHLXqengH9z7_SZzhqU_9QQjTKoU-gx_FiHTmV3xtmjG1cjIYBK_I5PtSTrdIKKx_uHomi9DSG5fCrWJOMw
+[INFO ] 2023-11-21 13:03:36.917 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:03:36.921 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:03:36.943 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU4OTc5NSwiZXhwIjoxNzAwNjE4NTk1fQ.TnfvHLXqengH9z7_SZzhqU_9QQjTKoU-gx_FiHTmV3xtmjG1cjIYBK_I5PtSTrdIKKx_uHomi9DSG5fCrWJOMw
+[INFO ] 2023-11-21 13:03:37.992 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:03:37.995 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:03:38.017 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU4OTc5NSwiZXhwIjoxNzAwNjE4NTk1fQ.TnfvHLXqengH9z7_SZzhqU_9QQjTKoU-gx_FiHTmV3xtmjG1cjIYBK_I5PtSTrdIKKx_uHomi9DSG5fCrWJOMw
+[INFO ] 2023-11-21 13:03:39.192 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:03:39.256 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU4OTc5NSwiZXhwIjoxNzAwNjE4NTk1fQ.TnfvHLXqengH9z7_SZzhqU_9QQjTKoU-gx_FiHTmV3xtmjG1cjIYBK_I5PtSTrdIKKx_uHomi9DSG5fCrWJOMw
+[INFO ] 2023-11-21 13:03:40.057 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:03:40.061 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:03:40.082 [main] LoggerLoad - GET ALL Patient Request Header with Bearer Token Validated
+[INFO ] 2023-11-21 13:03:40.298 [main] LoggerLoad - GET ALL Patients Request send!
+[INFO ] 2023-11-21 13:03:40.303 [main] LoggerLoad - GET ALL Patients Response ValidatedHTTP/1.1 200 
+[INFO ] 2023-11-21 13:03:40.775 [main] LoggerLoad - Updated Patient Details for 6078
+[INFO ] 2023-11-21 13:03:41.194 [main] LoggerLoad - NOT FOUND Message for inavalid PatienID as End point{"errorCode":"NOT_FOUND","errorMessage":"Patient not found with patientId : 8"}
+[INFO ] 2023-11-21 13:03:41.212 [main] LoggerLoad - GET Single Patient Request Header with Bearer Token Validated
+[INFO ] 2023-11-21 13:03:41.390 [main] LoggerLoad - GET Single Patient Request send with endpoint
+[INFO ] 2023-11-21 13:03:41.522 [main] LoggerLoad - Single Patient Response Validated for valid ID
+[INFO ] 2023-11-21 13:03:41.547 [main] LoggerLoad - GET Single Patient Request Header with Bearer Token Validated
+[INFO ] 2023-11-21 13:03:41.779 [main] LoggerLoad - GET Single Patient Request send with endpoint
+[INFO ] 2023-11-21 13:03:41.782 [main] LoggerLoad - Single Patient Response Validated for InValid ID
+[INFO ] 2023-11-21 13:03:41.800 [main] LoggerLoad - GET FileID Request given!
+[INFO ] 2023-11-21 13:03:42.001 [main] LoggerLoad - GET FileID for Valid ID Request send!
+[INFO ] 2023-11-21 13:03:42.004 [main] LoggerLoad - Response for Valid FileID Validated
+[INFO ] 2023-11-21 13:03:42.020 [main] LoggerLoad - GET FileID Request given!
+[INFO ] 2023-11-21 13:03:42.189 [main] LoggerLoad - GET FileID for In_Valid ID Request send!
+[INFO ] 2023-11-21 13:03:42.192 [main] LoggerLoad - Response for InValid FileID Validated
+[INFO ] 2023-11-21 13:03:43.397 [main] LoggerLoad - ******** Patient Login ********
+
+[INFO ] 2023-11-21 13:03:43.398 [main] LoggerLoad - Patient logged in successfully. Token :eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJDaWVycmFfUGFjb2NoYUBob3RtYWlsLmNvbSIsImlhdCI6MTcwMDU4OTgxMCwiZXhwIjoxNzAwNjE4NjEwfQ.WkHeRhu5aKpUm6oWIP411nDswA3FKaRTeDnpJRmlhvLvNPz0FXgA3fLZ1YUQf8p9UimtX-j5yWKN94y7-NZCEw
+[INFO ] 2023-11-21 13:03:44.386 [main] LoggerLoad - ******** Patient Login - Invalid email  ******** 
+io.restassured.internal.ValidatableResponseImpl@3dfaa1e4
+[INFO ] 2023-11-21 13:03:44.586 [main] LoggerLoad - ******** Patient Login - Get Report- By PatientID  ******** 
+io.restassured.internal.ValidatableResponseImpl@88fc9cb
+[INFO ] 2023-11-21 13:09:23.715 [main] LoggerLoad - Request for Dietician Login Header Validatedio.restassured.internal.RequestSpecificationImpl@44ed0a8f
+[INFO ] 2023-11-21 13:09:29.835 [main] LoggerLoad - Dietician Login RequestBody passed401
+[INFO ] 2023-11-21 13:09:31.650 [main] LoggerLoad - Dietician Login for Invalid Request Validated
+[INFO ] 2023-11-21 13:09:31.866 [main] LoggerLoad - Request for Dietician Login Header Validatedio.restassured.internal.RequestSpecificationImpl@301770d9
+[INFO ] 2023-11-21 13:09:32.533 [main] LoggerLoad - Dietician Login RequestBody passed200
+[INFO ] 2023-11-21 13:09:32.643 [main] LoggerLoad - Dietician Login for Valid Request Validated
+[INFO ] 2023-11-21 13:09:35.850 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU5MDE2MCwiZXhwIjoxNzAwNjE4OTYwfQ.Av0jCvFZKA3fbq4CTj3CYPA7YYuxJ8sDygm-5Po9w7UVz5AViAVSXNoGHXjutvCwY-W-79wXSkNICWDBykAbRQ
+[INFO ] 2023-11-21 13:09:37.106 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:09:37.110 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:09:37.131 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU5MDE2MCwiZXhwIjoxNzAwNjE4OTYwfQ.Av0jCvFZKA3fbq4CTj3CYPA7YYuxJ8sDygm-5Po9w7UVz5AViAVSXNoGHXjutvCwY-W-79wXSkNICWDBykAbRQ
+[INFO ] 2023-11-21 13:09:37.917 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:09:37.920 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:09:37.944 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU5MDE2MCwiZXhwIjoxNzAwNjE4OTYwfQ.Av0jCvFZKA3fbq4CTj3CYPA7YYuxJ8sDygm-5Po9w7UVz5AViAVSXNoGHXjutvCwY-W-79wXSkNICWDBykAbRQ
+[INFO ] 2023-11-21 13:09:38.827 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:09:38.831 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:09:38.857 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU5MDE2MCwiZXhwIjoxNzAwNjE4OTYwfQ.Av0jCvFZKA3fbq4CTj3CYPA7YYuxJ8sDygm-5Po9w7UVz5AViAVSXNoGHXjutvCwY-W-79wXSkNICWDBykAbRQ
+[INFO ] 2023-11-21 13:09:40.058 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:09:40.064 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:09:40.091 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU5MDE2MCwiZXhwIjoxNzAwNjE4OTYwfQ.Av0jCvFZKA3fbq4CTj3CYPA7YYuxJ8sDygm-5Po9w7UVz5AViAVSXNoGHXjutvCwY-W-79wXSkNICWDBykAbRQ
+[INFO ] 2023-11-21 13:09:41.243 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:09:41.247 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:09:41.268 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU5MDE2MCwiZXhwIjoxNzAwNjE4OTYwfQ.Av0jCvFZKA3fbq4CTj3CYPA7YYuxJ8sDygm-5Po9w7UVz5AViAVSXNoGHXjutvCwY-W-79wXSkNICWDBykAbRQ
+[INFO ] 2023-11-21 13:09:42.342 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:09:42.344 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:09:42.364 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU5MDE2MCwiZXhwIjoxNzAwNjE4OTYwfQ.Av0jCvFZKA3fbq4CTj3CYPA7YYuxJ8sDygm-5Po9w7UVz5AViAVSXNoGHXjutvCwY-W-79wXSkNICWDBykAbRQ
+[INFO ] 2023-11-21 13:09:43.402 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:09:43.473 [main] LoggerLoad - Create Patient Request Header validated with Bearer TokeneyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmVldGhhMDEyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDU5MDE2MCwiZXhwIjoxNzAwNjE4OTYwfQ.Av0jCvFZKA3fbq4CTj3CYPA7YYuxJ8sDygm-5Po9w7UVz5AViAVSXNoGHXjutvCwY-W-79wXSkNICWDBykAbRQ
+[INFO ] 2023-11-21 13:09:44.410 [main] LoggerLoad - Create Patient Request with  Request Body send
+[INFO ] 2023-11-21 13:09:44.416 [main] LoggerLoad - INVALID_REQ_DATA Error Displayed
+[INFO ] 2023-11-21 13:09:44.452 [main] LoggerLoad - GET ALL Patient Request Header with Bearer Token Validated
+[INFO ] 2023-11-21 13:09:44.642 [main] LoggerLoad - GET ALL Patients Request send!
+[INFO ] 2023-11-21 13:09:44.646 [main] LoggerLoad - GET ALL Patients Response ValidatedHTTP/1.1 200 
+[INFO ] 2023-11-21 13:09:45.154 [main] LoggerLoad - Updated Patient Details for 6087
+[INFO ] 2023-11-21 13:09:45.627 [main] LoggerLoad - NOT FOUND Message for inavalid PatienID as End point{"errorCode":"NOT_FOUND","errorMessage":"Patient not found with patientId : 8"}
+[INFO ] 2023-11-21 13:09:45.647 [main] LoggerLoad - GET Single Patient Request Header with Bearer Token Validated
+[INFO ] 2023-11-21 13:09:45.824 [main] LoggerLoad - GET Single Patient Request send with endpoint
+[INFO ] 2023-11-21 13:09:45.944 [main] LoggerLoad - Single Patient Response Validated for valid ID
+[INFO ] 2023-11-21 13:09:45.967 [main] LoggerLoad - GET Single Patient Request Header with Bearer Token Validated
+[INFO ] 2023-11-21 13:09:46.159 [main] LoggerLoad - GET Single Patient Request send with endpoint
+[INFO ] 2023-11-21 13:09:46.165 [main] LoggerLoad - Single Patient Response Validated for InValid ID
+[INFO ] 2023-11-21 13:09:46.187 [main] LoggerLoad - GET FileID Request given!
+[INFO ] 2023-11-21 13:09:46.371 [main] LoggerLoad - GET FileID for Valid ID Request send!
+[INFO ] 2023-11-21 13:09:46.374 [main] LoggerLoad - Response for Valid FileID Validated
+[INFO ] 2023-11-21 13:09:46.397 [main] LoggerLoad - GET FileID Request given!
+[INFO ] 2023-11-21 13:09:46.575 [main] LoggerLoad - GET FileID for In_Valid ID Request send!
+[INFO ] 2023-11-21 13:09:46.577 [main] LoggerLoad - Response for InValid FileID Validated
+[INFO ] 2023-11-21 13:09:47.835 [main] LoggerLoad - ******** Patient Login ********
+
+[INFO ] 2023-11-21 13:09:47.837 [main] LoggerLoad - Patient logged in successfully. Token :eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJDaWVycmFfUGFjb2NoYUBob3RtYWlsLmNvbSIsImlhdCI6MTcwMDU5MDE3NCwiZXhwIjoxNzAwNjE4OTc0fQ.v1B-zNZgBSHgypXljlE0uczx0qZylnGRG-sIMJ_xWMeJkOMFCclF1S2avPCQc9se9kzkzw3GcX1X3c2OVdRxlw
+[INFO ] 2023-11-21 13:09:48.953 [main] LoggerLoad - ******** Patient Login - Invalid email  ******** 
+io.restassured.internal.ValidatableResponseImpl@7d28efd5
+[INFO ] 2023-11-21 13:09:49.181 [main] LoggerLoad - ******** Patient Login - Get Report- By PatientID  ******** 
+io.restassured.internal.ValidatableResponseImpl@202ba60a
