@@ -1,5 +1,7 @@
 package api.stepdefinitions;
 
+import static org.junit.Assert.assertEquals;
+
 import java.io.File;
 import java.util.*;
 import org.hamcrest.Matchers;
@@ -88,11 +90,16 @@ public class DieticianRole {
 		try {
 		
 			if(KeyOption.equals("postPatient_MissingName")
-					|| KeyOption.equals("postPatient_MissingEmail") 
-					|| KeyOption.equals("postPatient_MissingContact")
-					|| KeyOption.equals("postPatient_MissingDOB")) {
+				|| KeyOption.equals("postPatient_MissingEmail") 
+				|| KeyOption.equals("postPatient_MissingContact")
+				|| KeyOption.equals("postPatient_MissingDOB")
+				|| KeyOption.equals("postPatient_Invalid_FoodCat")
+				|| KeyOption.equals("postPatient_Invalid_Allergy")
+				|| KeyOption.equals("postPatient_duplicate_UniqueValue")){
 				
 				valid_resp = response.then().log().all().assertThat().statusCode(400);
+				//String jsonString = valid_resp.toString();
+				//assertEquals(jsonString.contains("INVALID_REQ_DATA"), true);			
 								
 				LoggerLoad.logInfo("INVALID_REQ_DATA Error Displayed");
 				
@@ -154,7 +161,8 @@ public class DieticianRole {
 		
 		try {
 				
-			valid_resp = response.then().log().all().assertThat().statusCode(200).contentType(ContentType.JSON);
+			valid_resp = response.then().log().all().assertThat().statusCode(200)
+						.contentType(ContentType.JSON);
 			JsonPath jsonPathEvaluator = response.jsonPath();
 			
 			LoggerLoad.logInfo("GET ALL Patients Response Validated"+response.getStatusLine());
