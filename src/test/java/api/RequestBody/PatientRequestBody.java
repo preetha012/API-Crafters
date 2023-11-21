@@ -14,7 +14,7 @@ public class PatientRequestBody extends ExcelReader{
 	
 	public static PatientPayload PostPatientBody(String KeyOption, String sheetname) throws Exception {
 		
-		Map<String, String> excelDataMap = null;
+		Map<String, String> excelDataMap;
 	    excelDataMap = ExcelReader.getData(KeyOption, sheetname);	
 		patientPayload.setFirstName(excelDataMap.get("FirstName"));
 		patientPayload.setLastName(excelDataMap.get("LastName"));
