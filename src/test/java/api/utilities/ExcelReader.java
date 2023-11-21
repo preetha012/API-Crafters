@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -54,6 +55,13 @@ public class ExcelReader {
 		Map<String, String> dataMap = new HashMap<String, String>();
 		fi=new FileInputStream(readconfig.getXlpath());
 		workbook=new XSSFWorkbook(fi);
+		
+		int noOfSheets = workbook.getNumberOfSheets();
+		for(int sheetID = 0 ;sheetID < noOfSheets; sheetID++)
+		{
+			String name_of_sheet = workbook.getSheetName(sheetID);
+			System.out.println(name_of_sheet);
+		}
 		sheet=workbook.getSheet(sheetName);
 
 		int dataRow = getDataRow(dataKey.trim(), 0);

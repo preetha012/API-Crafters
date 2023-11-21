@@ -1,0 +1,6 @@
+[INFO ] 2023-11-20 15:07:58.792 [main] LoggerLoad - ******** Patient Login - Invalid email  ******** 
+io.restassured.internal.ValidatableResponseImpl@47eff554
+[INFO ] 2023-11-20 15:15:04.485 [main] LoggerLoad - ******** Patient Login - Invalid email  ******** 
+io.restassured.internal.ValidatableResponseImpl@204a02a4
+[INFO ] 2023-11-20 15:17:28.916 [main] LoggerLoad - ******** Patient Login - Invalid email  ******** 
+io.restassured.internal.ValidatableResponseImpl@204a02a4

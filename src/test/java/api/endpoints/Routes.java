@@ -19,7 +19,9 @@ public class Routes {
 	public static String GetAllPatient_Url = base_url+"/patient";
 	public static String UpdatePatient_ByPatientId_Url = base_url+"/patient/{patientId}";
 	public static String GetPatient_ByPatientId_Url = base_url+"/patient/testReports/{patientId}";
+	//public static String GetPatient_ByPatientId_Url = base_url+"/patient/testReports/";
 	public static String GetPatient_ByFieldId_Url = base_url+"/patient/testReports/viewFile/{fileId}";
 	public static String DeletePatient_ByPatientId_Url= base_url+"/patient/{patientId}";
 
 }
+//{{BaseUrl}}/patient/testReports/:validPID
