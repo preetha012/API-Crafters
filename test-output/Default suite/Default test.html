@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 17 22:58:37 EST 2023</td>
+<td>Started on:</td><td>Sun Nov 19 20:32:07 PST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13586 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4740 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,9 +76,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if dietician able to craete a patient.", "Create Patient"</td>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that patient id is deleted using valid url", "validating Dietician Delete and Logout request"</td>
 <td><div><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;400&gt;.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -102,11 +102,11 @@ Expected status code &lt;200&gt; but was &lt;400&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at api.stepdefinitions.Patient_step.dietician_receives_patient_created_status_with_response_body(Patient_step.java:85)
-	at ✽.Dietician receives Patient Created Status with response body.(file:///C:/Users/anoop/eclipse-workspaceNew/API-Crafters/src/test/resources/features/03Patient.feature:15)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2081421216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2081421216'><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;400&gt;.
+	at api.stepdefinitions.Logout_step.the_response_will_return_delete_status(Logout_step.java:45)
+	at ✽.the response will return delete status 200(file:///C:/Users/patil/git/API-Crafters/src/test/resources/features/05DieticianLogout.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1469963860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1469963860'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -130,11 +130,11 @@ Expected status code &lt;200&gt; but was &lt;400&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at api.stepdefinitions.Patient_step.dietician_receives_patient_created_status_with_response_body(Patient_step.java:85)
-	at ✽.Dietician receives Patient Created Status with response body.(file:///C:/Users/anoop/eclipse-workspaceNew/API-Crafters/src/test/resources/features/03Patient.feature:15)
+	at api.stepdefinitions.Logout_step.the_response_will_return_delete_status(Logout_step.java:45)
+	at ✽.the response will return delete status 200(file:///C:/Users/patil/git/API-Crafters/src/test/resources/features/05DieticianLogout.feature:10)
 </pre></div></td>
 <td>0</td>
-<td>runners.TestRunner@3c41ed1d</td></tr>
+<td>runners.TestRunner@2cd76f31</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -145,10 +145,15 @@ Expected status code &lt;200&gt; but was &lt;400&gt;.
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to logout as a Dietician", "validating Dietician Delete and Logout request"</td>
+<td></td>
+<td>0</td>
+<td>runners.TestRunner@2cd76f31</td></tr>
+<tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to login as a Dietician", "User Login"</td>
 <td></td>
-<td>10</td>
-<td>runners.TestRunner@3c41ed1d</td></tr>
+<td>3</td>
+<td>runners.TestRunner@2cd76f31</td></tr>
 </table><p>
 </body>
 </html>

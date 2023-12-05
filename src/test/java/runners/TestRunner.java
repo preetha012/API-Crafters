@@ -18,8 +18,9 @@ import io.cucumber.testng.CucumberOptions;
 					//"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 					}, //reporting purpose
 			monochrome=false,  //console output color
-			features = {"src/test/resources/features/03Patient.feature",
-					"src/test/resources/features/01DieticianUserLogin.feature"
+			features = {
+					"src/test/resources/features/01DieticianUserLogin.feature",
+					"src/test/resources/features/05DieticianLogout.feature"
 					
 					}, //location of feature files		
 
