@@ -1,0 +1,1 @@
+{"uuid":"e94823c6-02eb-4476-9ce4-811dde93787b","name":"Scenario Outline: Check if user able to login as a Patient with invalid password","children":["a51ea955-a0b3-44d2-869f-907baaae2b6c"],"befores":[],"afters":[],"start":1700600764144,"stop":1700600764845}
