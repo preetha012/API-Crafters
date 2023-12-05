@@ -1,0 +1,1 @@
+{"uuid":"bcd5f7b2-4b38-4014-b0a6-cb7aaa73cf36","name":"Scenario Outline: Check if user able to login as a Patient with invalid email","children":["74a9d40c-08c5-476a-a8cf-0fd7d4def021"],"befores":[],"afters":[],"start":1700600764858,"stop":1700600765579}
